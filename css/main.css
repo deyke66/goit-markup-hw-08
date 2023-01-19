@@ -108,7 +108,7 @@ p {
     width: 768px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1140px) {
   .container {
     width: 1200px;
   }
@@ -548,6 +548,11 @@ p {
 .example {
   padding-bottom: 94px;
 }
+@media screen and (max-width: 1139px) {
+  .example {
+    display: none;
+  }
+}
 .example__title {
   color: var(--color-text-secondary);
   font-weight: 700;
@@ -798,7 +803,7 @@ p {
     padding-bottom: 26px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1140px) {
   .header__logo {
     font-size: 26px;
     line-height: 1.2;
@@ -869,6 +874,8 @@ p {
 
 .contact-menu {
   display: none;
+  margin-bottom: 0;
+  margin-top: 0;
 }
 @media screen and (min-width: 768px) {
   .contact-menu {
@@ -882,7 +889,7 @@ p {
     gap: 10px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1140px) {
   .contact-menu {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -906,6 +913,12 @@ p {
           align-items: center;
   -webkit-transition: color 250ms var(--cubic-b), fill 250ms var(--cubic-b);
   transition: color 250ms var(--cubic-b), fill 250ms var(--cubic-b);
+}
+@media screen and (min-width: 1140px) {
+  .contact-menu__link {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
 }
 .contact-menu__item {
   display: block;
@@ -948,7 +961,7 @@ p {
     width: 768px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1140px) {
   .hero {
     max-width: 1200px;
     width: 1200px;

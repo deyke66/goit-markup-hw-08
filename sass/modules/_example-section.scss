@@ -1,5 +1,8 @@
 .example {
     padding-bottom: 94px;
+    @media screen and (max-width: 1139px) {
+        display: none;
+    }
 
     &__title {
         color: var(--color-text-secondary);
