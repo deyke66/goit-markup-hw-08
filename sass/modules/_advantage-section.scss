@@ -1,35 +1,51 @@
 .advantage {
     display: flex;
+    flex-direction: column;
     align-items: center;
     padding: 0;
     margin: 0;
     list-style: none;
     gap: 30px;
+    
+    @media screen and (min-width: 768px) {
+        flex-direction: row;
+        flex-wrap: wrap;
 
-    &__item {
-        width: 270px;
-        height: 248px;
     }
 
-    &__item > &__thumb {
+
+    &__item {
+        @media screen and (min-width: 768px) {
+            max-width: 354px;
+        }
+        @media screen and (min-width: 1140px) {
+            width: 270px;
+            height: 248px;
+        }
+    }
+
+    &__thumb {
         display: flex;
         align-items: center;
         justify-content: center;
     
-        width: 270px;
+        max-width: 100%;
         height: 120px;
     
         margin-bottom: 30px;
         background-color: var(--icon-bcg-color);
     }
     &__title {
-        display: inline-block;
+        display: block;
         color: var(--color-text-secondary);
-    
+
+        text-align: center;
+
         font-weight: 700;
         font-size: 14px;
         line-height: 1.14;
         letter-spacing: 0.03em;
+
         text-transform: uppercase;
         margin-bottom: 10px;
     }

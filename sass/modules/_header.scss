@@ -5,34 +5,55 @@
 
     &__logo {
         display: inline-block;
-    
-        padding-top: 24px;
-        padding-bottom: 25px;
-        margin-right: 93px;
+        
+        padding-top: 16px;
+        padding-bottom: 16px;
+        // padding-top: 24px;
+        // padding-bottom: 25px;
+        // margin-right: 93px;
     
         color: var(--color-text-header);
         font-family: 'Raleway', sans-serif;
         text-decoration: none;
         font-weight: 700;
-        font-size: 26px;
-        line-height: 1.2;
+        font-size: 24px;
+        line-height: 1.16;
+
+        @media screen and (min-width: 768px) {
+            padding-top: 26px;
+            padding-bottom: 26px;
+        }
+        @media screen and (min-width: 1200px) {
+            font-size: 26px;
+            line-height: 1.2;
+        }
     }
 
     &__menu {
-        display: flex;
+        display: none;
+        // display: flex;
         list-style: none;
         padding: 0;
         margin: 0;
+
+        @media screen and (min-width: 768px) {
+            display: flex;
+            gap: 50px;
+        }
     }
     &__item {
         position: relative; 
     }
-    &__item:not(:last-child) {
-        margin-right: 50px;
-    }
+    // &__item:not(:last-child) {
+    //     margin-right: 50px;
+    // }
     &__container {
-        display: flex;
-        align-items: center;
+        width: 100%;
+        @media screen and (min-width: 768px) {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
     }
     
     &__link {
@@ -70,16 +91,28 @@
     }
 }
 .contact-menu {
-    display: flex;
-    align-items: center;
-    margin-left: auto;
-    margin-bottom: 0;
-    margin-top: 0;
+    display: none;
+    // display: flex;
+    // align-items: center;
+    // margin-left: auto;
+    // margin-bottom: 0;
+    // margin-top: 0;
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        // align-items: center;
+    }
+    @media screen and (min-width: 1200px) {
+        flex-direction: row;
+        gap: 40px;
+    }
 
     &__link {
         display: flex;
-        padding-top: 32px;
-        padding-bottom: 32px;
+        // padding-top: 32px;
+        // padding-bottom: 32px;
     
         color: var(--color-text-primary);
         text-decoration: none;
@@ -94,9 +127,9 @@
     &__item {
         display: block;
     }
-    &__item:not(:last-child) {
-        margin-right: 40px;
-    }
+    // &__item:not(:last-child) {
+    //     margin-right: 40px;
+    // }
     &__icon {
         fill: #757575;
         margin-right: 10px;
