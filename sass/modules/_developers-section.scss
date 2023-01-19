@@ -12,21 +12,40 @@
 }
 .card-menu {
     display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
     gap: 30px;
     list-style: none;
     padding: 0;
     margin: 0;
+    @media screen and (min-width: 768px) {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 
     &__item {
+        width: 100%;
         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     
         border-radius: 0px 0px 4px 4px;
+        @media screen and (min-width: 768px) {
+            width: 354px;
+        }
+        @media screen and (min-width: 1140px) {
+            width: 270px;
+        }
     }
     &__box {
-        width: 270px;
+        // width: 354px;
         background-color: var(--color-white-txt);
         padding: 30px;
         border-radius: 0px 0px 4px 4px;
+
+        @media screen and (min-width: 1140px) {
+            width: 270px;
+        }
     }
     &__title {
         color: var(--color-text-secondary);
