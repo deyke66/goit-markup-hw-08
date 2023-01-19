@@ -1,0 +1,15 @@
+.button {
+    display: inline-block;
+    border: 1px transparent;
+    color: var(--color-white-txt);
+    background-color: var(--color-blue);
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: 0.06em;
+    min-width: 200px;
+    padding: 10px 24px;
+    border-radius: 4px;
+    
+}

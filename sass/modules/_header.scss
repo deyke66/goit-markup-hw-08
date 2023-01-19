@@ -1,0 +1,119 @@
+.header {
+    border: 1px var(--color-border);
+    margin: 0 auto;
+    border-bottom: 1px solid var(--color-border);
+
+    &__logo {
+        display: inline-block;
+    
+        padding-top: 24px;
+        padding-bottom: 25px;
+        margin-right: 93px;
+    
+        color: var(--color-text-header);
+        font-family: 'Raleway', sans-serif;
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 1.2;
+    }
+
+    &__menu {
+        display: flex;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    &__item {
+        position: relative; 
+    }
+    &__item:not(:last-child) {
+        margin-right: 50px;
+    }
+    &__container {
+        display: flex;
+        align-items: center;
+    }
+    
+    &__link {
+        display: inline-block;
+    
+        padding-top: 32px;
+        padding-bottom: 32px;
+    
+        color: var(--color-text-secondary);
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+    
+        transition: color 250ms var(--cubic-b);
+    }
+    &__menu,
+    &__link--current {
+        color: var(--color-blue);
+    }
+    &__link:hover, 
+    &__link:focus {
+        color: var(--color-blue);
+    }
+    &__link--current::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 4px;
+        left: 0;
+        bottom: 0;
+        background-color: var(--color-blue);
+        border-radius: 2px;
+    }
+}
+.contact-menu {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-bottom: 0;
+    margin-top: 0;
+
+    &__link {
+        display: flex;
+        padding-top: 32px;
+        padding-bottom: 32px;
+    
+        color: var(--color-text-primary);
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+    
+        align-items: center;
+        transition: color 250ms var(--cubic-b), fill 250ms var(--cubic-b);
+    }
+    &__item {
+        display: block;
+    }
+    &__item:not(:last-child) {
+        margin-right: 40px;
+    }
+    &__icon {
+        fill: #757575;
+        margin-right: 10px;
+    }
+    &__link:hover,
+    &__link:focus {
+        color: var(--color-blue);
+    }
+    &__link:hover &__icon, &__link:focus &__icon {
+        fill: var(--color-blue);
+    }
+}
+.accent {
+    color: var(--color-blue);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    
+}

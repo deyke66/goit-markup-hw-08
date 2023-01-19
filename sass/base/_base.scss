@@ -1,0 +1,13 @@
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+body {
+    color: var(--color-text-primary);
+    background: var(--color-white-txt);
+    font-family: 'roboto', sans-serif;
+    font-size: 14px;
+    line-height: 1.4;
+    letter-spacing: 0.03em;
+}
