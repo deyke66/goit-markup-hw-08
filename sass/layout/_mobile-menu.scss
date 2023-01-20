@@ -1,0 +1,54 @@
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-white-txt);
+
+    transform: translateY(-100%);
+    transition: transform 250ms var(--cubic-b);
+
+    &__button {
+        display: block;
+        border: none;
+        background-color: var(--color-white-txt);
+        margin-top: 10px;
+        margin-left: auto;
+        &:hover,
+        &:focus {
+            fill: var(--color-blue);
+        }
+    }
+    &__button-close {
+    }
+    &__list {
+        list-style: none;
+    }
+    &__item {
+    }
+    &__link {
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 1.17;
+        margin-bottom: 32px;
+        text-decoration: none;
+    }
+    &__link--social {
+        display: inline-block;
+        color: var(--color-blue);
+        font-size: 18px;
+        line-height: 1.2;
+    }
+    &__contact {
+        list-style: none;
+    }
+    &__social {
+
+        list-style: none;
+    }
+    &.is-open {
+        display: block;
+        transform: translateY(0);
+    }
+}
