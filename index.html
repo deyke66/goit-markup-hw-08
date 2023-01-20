@@ -478,28 +478,31 @@
               </li>
             </ul>
           </div>
-          <form name="subscribe-form" autocomplete="off" class="subscribe-form">
-            <div class="subscribe-form__field">
-              <label class="subscribe-form__label" for="subscribe"
-                >Підпишіться на розсилку</label
-              >
-              <input
-                class="subscribe-form__input"
-                name="email"
-                type="email"
-                id="subscribe"
-                placeholder="E-mail"
-              />
-            </div>
-            <div class="subscribe-form__field subscribe-form__field--button">
-              <button class="subscribe-form__button" type="submit">
-                Підписатися
-              </button>
-              <svg class="subscribe-form__icon" width="24" height="24">
-                <use href="./images/icons.svg#icon-icon-send"></use>
-              </svg>
-            </div>
-          </form>
+          <div class="subscribe-thumb">
+            <form name="subscribe-form" autocomplete="off" class="subscribe-form">
+              <!-- <div class="subscribe-form__field"> -->
+                <label class="subscribe-form__label" for="subscribe"
+                  >Підпишіться на розсилку</label
+                >
+                <input
+                  class="subscribe-form__input"
+                  name="email"
+                  type="email"
+                  id="subscribe"
+                  placeholder="E-mail"
+                />
+                <button class="subscribe-form__button" type="submit">
+                  Підписатися
+                  <svg class="subscribe-form__icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-icon-send"></use>
+                  </svg>
+                </button>
+              <!-- </div> -->
+              <!-- <div class="subscribe-form__field subscribe-form__field--button"> -->
+              <!-- </div> -->
+              
+            </form>
+          </div>
         </div>
       </div>
     </footer>
