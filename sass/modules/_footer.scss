@@ -1,6 +1,7 @@
 .footer {
     padding-top: 60px;
     padding-bottom: 60px;
+    
     // &__thumb {
         // margin-right: 93px;
     // }
@@ -12,6 +13,16 @@
         align-items: center;
         padding: 0;
         gap: 60px;
+
+        @media screen and (min-width: 768px) {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        @media screen and (min-width: 1140px) {
+            flex-wrap: nowrap;
+            align-items: baseline;
+        }
     }
     &-logo {
         display: block;
@@ -78,8 +89,15 @@
     }
 }
 .subscribe-thumb {
-    width: 100%;
+    
     display: flex;
+    @media screen and (max-width: 1139px) {
+        width: 100%;
+    }
+
+    @media screen and (min-width: 768px) {
+        justify-content: center;
+    }
 }
 .subscribe-form {
     width: 100%;
@@ -87,18 +105,23 @@
     flex-direction: column;
     justify-content: center;
     gap: 20px;
-    // width: 570px;
-    // &__field {
-    //     width: 450px;
-    //     display: flex;
-    //     flex-direction: column;
-        
-    //     // margin-right: 12px;
-    // }
+
+    @media screen and (max-width: 1139px) {
+        width: 450px;
+    }
+
+    &__field {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        @media screen and (min-width: 1140px) {
+            flex-direction: row;
+        }
+    }
     &__field--button {
         display: flex;
         align-items: center;
-        // flex-direction: column-reverse;
         position: relative;
         margin: 0;
     }
@@ -108,7 +131,7 @@
         line-height: 1.1;
         text-transform: uppercase;
         color: var(--color-white-txt);
-        margin-bottom: 20px;
+        // margin-bottom: 20px;
     }
     &__input {
         // width: 358px;
@@ -122,6 +145,9 @@
         padding-left: 16px;
         color: var(--color-white-txt);
         transition: border-color 250ms var(--cubic-b);
+        @media screen and (min-width: 1140px) {
+            width: 358px;
+        }
     }
     &__input:focus {
         border-color: var(--color-blue);
@@ -133,10 +159,11 @@
         color: rgba(255, 255, 255, 0.6);
     }
     &__button {
-        
+        display: flex;
+        align-items: center;
         width: 200px;
         height: 50px;
-    
+        padding-left: 28px;
         font-weight: 700;
         font-size: 16px;
         line-height: calc(30 / 16);

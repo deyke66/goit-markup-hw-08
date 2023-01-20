@@ -685,6 +685,27 @@ p {
   padding: 0;
   gap: 60px;
 }
+@media screen and (min-width: 768px) {
+  .footer__box {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+@media screen and (min-width: 1140px) {
+  .footer__box {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+}
 .footer-logo {
   display: block;
   color: var(--color-white-txt);
@@ -745,10 +766,21 @@ p {
 }
 
 .subscribe-thumb {
-  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+@media screen and (max-width: 1139px) {
+  .subscribe-thumb {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .subscribe-thumb {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .subscribe-form {
@@ -764,6 +796,29 @@ p {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 20px;
+}
+@media screen and (max-width: 1139px) {
+  .subscribe-form {
+    width: 450px;
+  }
+}
+.subscribe-form__field {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+}
+@media screen and (min-width: 1140px) {
+  .subscribe-form__field {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
 }
 .subscribe-form__field--button {
   display: -webkit-box;
@@ -781,7 +836,6 @@ p {
   line-height: 1.1;
   text-transform: uppercase;
   color: var(--color-white-txt);
-  margin-bottom: 20px;
 }
 .subscribe-form__input {
   height: 50px;
@@ -795,6 +849,11 @@ p {
   color: var(--color-white-txt);
   -webkit-transition: border-color 250ms var(--cubic-b);
   transition: border-color 250ms var(--cubic-b);
+}
+@media screen and (min-width: 1140px) {
+  .subscribe-form__input {
+    width: 358px;
+  }
 }
 .subscribe-form__input:focus {
   border-color: var(--color-blue);
@@ -830,8 +889,15 @@ p {
   color: rgba(255, 255, 255, 0.6);
 }
 .subscribe-form__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 200px;
   height: 50px;
+  padding-left: 28px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.875;
