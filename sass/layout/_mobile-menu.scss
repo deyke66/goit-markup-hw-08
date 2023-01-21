@@ -9,7 +9,7 @@
     transform: translateX(-100%);
     transition: transform 250ms var(--cubic-b);
     overflow-y: scroll;
-
+    
     &__box {
         display: flex;
 
@@ -63,6 +63,9 @@
             color: var(--color-blue);
         }
         
+    }
+    &__link--current {
+        color: var(--color-blue);
     }
     &__link--phone {
         font-size: 34px;

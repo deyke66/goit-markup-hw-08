@@ -395,6 +395,9 @@ ul {
 .mobile-menu__link:hover, .mobile-menu__link:focus {
   color: var(--color-blue);
 }
+.mobile-menu__link--current {
+  color: var(--color-blue);
+}
 .mobile-menu__link--phone {
   font-size: 34px;
   line-height: 1.17;
