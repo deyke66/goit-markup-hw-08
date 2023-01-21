@@ -27,4 +27,7 @@
     transition: transform 500ms var(--cubic-b);
 
     overflow-y: scroll;
+    @media screen and (max-width: 767px) {
+        width: 90%;
+    }
 }
