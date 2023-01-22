@@ -10,16 +10,11 @@
     transition: transform 250ms var(--cubic-b);
 
     overflow-y: scroll;
-
-    &__container {
+    &__flex {
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
         height: 100vh;
-
-        margin-bottom: 64px;
     }
-    
     &__box {
         display: flex;
 
@@ -35,8 +30,6 @@
             fill: var(--color-blue);
         }
     }
-    // &__button-close {
-    // }
     &__nav {
         list-style: none;
         margin-bottom: auto;
@@ -117,6 +110,7 @@
     }
     &__contact {
         list-style: none;
+        margin-bottom: 64px;
     }
     &__social {
         display: flex;
